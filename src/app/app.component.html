@@ -1,0 +1,85 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="text-danger text-center shadow-lg p-3 mb-5 bg-white rounded">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="container mt-2">
+  <div class="">
+    <form action="save()">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Fist Name</label>
+            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Ahmed" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <div>
+              <input class="form-control"  placeholder="Hussain" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <div>
+              <input class="form-control"  placeholder="AHussain@gmail.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <div>
+              <input class="form-control"  placeholder="058 259 29 81" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <div>
+              <input class="form-control"  placeholder="19.08.1988" required>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Sex</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Question</label>
+            <div>
+              <input class="form-control"  placeholder="Answer" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Another Question</label>
+            <div>
+              <input class="form-control"  placeholder="Another answer" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Yet Another Questoin</label>
+            <div>
+              <input class="form-control"  placeholder="Yet Another answer" required>
+            </div>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+            <label class="form-check-label" for="defaultCheck1">
+              I accept terms and conditions *
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row ">
+        <button type="submit" class="btn btn-primary mx-auto" data-dismiss="modal"
+            (click)="add(name.value, style.value, brewery.value, price.value, pack.value, countInPack.value, packVolume.value, imglink.value);">
+            Save</button>
+      </div>
+      </form>
+    </div>
+</div>
+<div class="container">
+  <p class="font-weight-light">* I agree that Octagon can send me 100 emails and sms per day or even more if required. They can call me during the night or weeked, they can take my car, house and mother.</p>
+</div>
